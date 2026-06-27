@@ -1,4 +1,4 @@
-import flavioPortrait from '$lib/assets/brand/partners/flavio-ferretti.png';
+import flavioPortrait from '$lib/assets/brand/partners/flavio-ferretti-2.jpeg';
 import nathaliaPortrait from '$lib/assets/brand/partners/nathalia-ferretti.jpeg';
 
 export const navItems = [
