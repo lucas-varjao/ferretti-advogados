@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { MessageCircle } from 'lucide-svelte';
+	import WhatsAppIcon from '$lib/components/WhatsAppIcon.svelte';
 	import { contact } from '$lib/content/site';
 
 	let {
@@ -19,7 +19,7 @@
 	target="_blank"
 	rel="noreferrer"
 >
-	<MessageCircle size={18} strokeWidth={2.2} />
+	<WhatsAppIcon size={18} />
 	<span>{label}</span>
 </a>
 

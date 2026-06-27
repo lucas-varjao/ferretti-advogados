@@ -1,4 +1,4 @@
-import flavioPortrait from '$lib/assets/brand/partners/flavio-ferretti.jpeg';
+import flavioPortrait from '$lib/assets/brand/partners/flavio-ferretti.png';
 import nathaliaPortrait from '$lib/assets/brand/partners/nathalia-ferretti.jpeg';
 
 export const navItems = [
@@ -11,6 +11,7 @@ export const navItems = [
 
 export const contact = {
 	whatsappLabel: 'WhatsApp',
+	whatsappNumber: '(11) 99507-7294',
 	whatsappHref:
 		'https://wa.me/5511995077294?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Ferretti%20Advogados.',
 	email: 'flavio@ferrettiadvogados.com.br',
@@ -118,6 +119,7 @@ export const partners = [
 		initials: 'NF',
 		src: nathaliaPortrait,
 		role: 'Sócia | Advogada trabalhista',
+		oab: 'OAB/SP 380.195',
 		summary:
 			'Advogada trabalhista desde 2018, com atuação voltada à assessoria consultiva e contenciosa de trabalhadores e empresas.',
 		description:
@@ -128,6 +130,7 @@ export const partners = [
 		initials: 'FF',
 		src: flavioPortrait,
 		role: 'Sócio | Advogado trabalhista',
+		oab: 'OAB/SP 238.245',
 		summary: 'Advogado com 17 anos de atuação profissional exclusivamente na área trabalhista.',
 		description:
 			'Ao longo de sua trajetória, participou da condução de milhares de audiências e negociações, desenvolvendo ampla experiência prática na resolução de conflitos e na representação de clientes em demandas judiciais.'

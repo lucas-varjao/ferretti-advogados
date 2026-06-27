@@ -12,6 +12,7 @@
 	import logoMark from '$lib/assets/brand/logos/logo_ferretti_05.svg';
 	import Footer from '$lib/components/Footer.svelte';
 	import InstagramIcon from '$lib/components/InstagramIcon.svelte';
+	import WhatsAppIcon from '$lib/components/WhatsAppIcon.svelte';
 	import MetaTags from '$lib/components/MetaTags.svelte';
 	import PartnerPortrait from '$lib/components/PartnerPortrait.svelte';
 	import Reveal from '$lib/components/Reveal.svelte';
@@ -43,9 +44,10 @@
 				<h1>Advocacia trabalhista estratégica para trabalhadores e empresas.</h1>
 				<p class="lead">{home.description}</p>
 				<div class="hero-actions">
-					<a class="primary" href={contact.whatsappHref} target="_blank" rel="noreferrer"
-						>Falar com o escritório</a
-					>
+					<a class="primary" href={contact.whatsappHref} target="_blank" rel="noreferrer">
+						<WhatsAppIcon size={18} />
+						Falar com o escritório
+					</a>
 					<a class="text-link" href="#atuacao">Ver áreas de atuação <ArrowRight size={16} /></a>
 				</div>
 			</Reveal>
@@ -146,10 +148,15 @@
 							variant="editorial"
 						/>
 						<div class="partner-copy">
-							<span>{partner.role}</span>
-							<h3>{partner.name}</h3>
-							<p>{partner.summary}</p>
-							<p>{partner.description}</p>
+							<div class="partner-identity">
+								<span>{partner.role}</span>
+								<h3>{partner.name}</h3>
+								<p class="partner-oab">{partner.oab}</p>
+							</div>
+							<div class="partner-bio">
+								<p>{partner.summary}</p>
+								<p>{partner.description}</p>
+							</div>
 						</div>
 					</article>
 				</Reveal>
@@ -166,7 +173,7 @@
 		<Reveal>
 			<div class="contact-box">
 				<a class="primary" href={contact.whatsappHref} target="_blank" rel="noreferrer">
-					<MessageCircle size={18} /> Iniciar pelo WhatsApp
+					<WhatsAppIcon size={18} /> Iniciar pelo WhatsApp
 				</a>
 				{#each contact.emails as email (email.href)}
 					<a href={email.href}><Mail size={18} /> {email.label}</a>
@@ -316,7 +323,6 @@
 	:global(.v1 .section-head > p),
 	:global(.v1 .area-card p),
 	:global(.v1 .diff-grid p),
-	:global(.v1 .partner-card p),
 	:global(.v1 .contact p) {
 		color: rgba(49, 45, 42, 0.7);
 	}
@@ -532,22 +538,49 @@
 	:global(.v1 .partner-copy) {
 		align-content: start;
 		display: grid;
-		gap: 0.72rem;
+		gap: 1rem;
 	}
 
-	:global(.v1 .partner-copy h3),
-	:global(.v1 .partner-copy p) {
-		margin: 0;
+	:global(.v1 .partner-identity) {
+		display: grid;
+		gap: 0.42rem;
 	}
 
-	:global(.v1 .partner-card span) {
-		color: var(--ferretti-taupe);
+	:global(.v1 .partner-identity h3) {
+		font-size: clamp(1.28rem, 2.1vw, 1.72rem);
+		font-weight: 800;
+		line-height: 1.12;
+		margin: 0.08rem 0 0.12rem;
+	}
+
+	:global(.v1 .partner-identity span) {
+		color: rgba(49, 45, 42, 0.62);
 		display: block;
 		font-size: 0.74rem;
 		font-weight: 800;
 		letter-spacing: 0.12em;
-		margin: 0 0 -0.18rem;
+		margin: 0;
 		text-transform: uppercase;
+	}
+
+	:global(.v1 .partner-oab) {
+		color: rgba(49, 45, 42, 0.72);
+		font-size: 0.82rem;
+		font-weight: 600;
+		letter-spacing: 0.04em;
+		margin: 0;
+	}
+
+	:global(.v1 .partner-bio) {
+		border-top: 1px solid rgba(49, 45, 42, 0.12);
+		display: grid;
+		gap: 0.72rem;
+		padding-top: 0.95rem;
+	}
+
+	:global(.v1 .partner-bio p) {
+		color: rgba(49, 45, 42, 0.8);
+		margin: 0;
 	}
 
 	:global(.v1 .contact-box) {

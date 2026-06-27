@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { Menu, MessageCircle, X } from 'lucide-svelte';
+	import { Menu, X } from 'lucide-svelte';
+	import WhatsAppIcon from '$lib/components/WhatsAppIcon.svelte';
 	import { contact, navItems } from '$lib/content/site';
 
 	let {
@@ -29,7 +30,7 @@
 	</nav>
 
 	<a class="desktop-whatsapp" href={contact.whatsappHref} target="_blank" rel="noreferrer">
-		<MessageCircle size={17} />
+		<WhatsAppIcon size={17} />
 		<span>WhatsApp</span>
 	</a>
 
@@ -55,7 +56,7 @@
 				{/each}
 			</nav>
 			<a class="mobile-whatsapp" href={contact.whatsappHref} target="_blank" rel="noreferrer">
-				<MessageCircle size={17} />
+				<WhatsAppIcon size={17} />
 				<span>WhatsApp</span>
 			</a>
 		</div>

@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { ArrowUp, MessageCircle } from 'lucide-svelte';
+	import { ArrowUp } from 'lucide-svelte';
 	import InstagramIcon from '$lib/components/InstagramIcon.svelte';
+	import WhatsAppIcon from '$lib/components/WhatsAppIcon.svelte';
 	import { contact } from '$lib/content/site';
 </script>
 
@@ -12,7 +13,7 @@
 		rel="noreferrer"
 		aria-label="Abrir WhatsApp"
 	>
-		<MessageCircle size={20} />
+		<WhatsAppIcon size={20} />
 	</a>
 	<a
 		class="float-button"

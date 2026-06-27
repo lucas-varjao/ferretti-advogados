@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { Clock, Mail, MapPin, MessageCircle } from 'lucide-svelte';
+	import { Clock, Mail, MapPin } from 'lucide-svelte';
 	import InstagramIcon from '$lib/components/InstagramIcon.svelte';
+	import WhatsAppIcon from '$lib/components/WhatsAppIcon.svelte';
 	import logoDark from '$lib/assets/brand/logos/logo_ferretti_02.svg';
 	import logoLight from '$lib/assets/brand/logos/logo_ferretti_03.svg';
 	import { contact, navItems } from '$lib/content/site';
@@ -24,7 +25,8 @@
 
 		<div class="contact-block">
 			<a href={contact.whatsappHref} target="_blank" rel="noreferrer">
-				<MessageCircle size={17} /> WhatsApp
+				<WhatsAppIcon size={17} />
+				{contact.whatsappLabel} · {contact.whatsappNumber}
 			</a>
 			{#each contact.emails as email (email.href)}
 				<a href={email.href}><Mail size={17} /> {email.label}</a>
