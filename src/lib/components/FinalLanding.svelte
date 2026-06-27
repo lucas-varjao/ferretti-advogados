@@ -151,7 +151,7 @@
 							<div class="partner-identity">
 								<span>{partner.role}</span>
 								<h3>{partner.name}</h3>
-								<p class="partner-oab">{partner.oab}</p>
+								<!-- <p class="partner-oab">{partner.oab}</p> -->
 							</div>
 							<div class="partner-bio">
 								<p>{partner.summary}</p>
