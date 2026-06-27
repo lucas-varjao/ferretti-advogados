@@ -4,17 +4,9 @@
 
 Landing page em SvelteKit/Svelte 5, TypeScript e Tailwind, com deploy em Cloudflare Pages.
 
-O objetivo atual é manter sete propostas navegáveis em:
+O objetivo atual é manter a versão definitiva da landing page em `/`.
 
-- `/1`
-- `/2`
-- `/3`
-- `/4`
-- `/5`
-- `/6`
-- `/7`
-
-As páginas são variações visuais para escolha final, mas devem respeitar a identidade Ferretti Advogados.
+A proposta escolhida foi a antiga `/1`, com direção editorial clara, navegação horizontal minimalista e foco em advocacia trabalhista estratégica para trabalhadores e empresas.
 
 ## Comandos
 
@@ -47,7 +39,7 @@ Paleta base:
 - `#ECE3D9`
 - `#FBF6F1`
 
-Essas cores devem orientar a marca, mas as propostas não devem parecer todas iguais. É permitido criar versões claras e escuras.
+Essas cores devem orientar a marca. A versão definitiva atual usa tema claro com contraste em tons escuros da marca.
 
 Fontes:
 
@@ -66,12 +58,12 @@ Fontes:
 
 Regra obrigatória:
 
-- Todas as propostas devem usar navbar horizontal.
+- A navbar deve ser horizontal em desktop.
 - Não criar menu vertical, painel lateral, dock inferior ou navegação em coluna.
 - A navbar não deve ter fundo próprio em desktop.
 - A navbar não deve ser fixa ou sticky em desktop.
 - Ela deve se integrar visualmente ao fundo da própria página/seção.
-- A navbar deve seguir o estilo das propostas `/1` e `/2`:
+- A navbar deve seguir o estilo da versão definitiva:
   - logo à esquerda
   - links de navegação ao centro
   - botão WhatsApp à direita
@@ -156,9 +148,10 @@ Mobile é essencial.
 
 Verificar:
 
-- `/1` a `/7` carregam.
-- Todas as navbars desktop são horizontais, sem fundo próprio e sem fixação.
-- Todas as navbars mobile colapsam atrás de ícone de três linhas.
+- `/` carrega a versão definitiva.
+- `/1` redireciona para `/`.
+- A navbar desktop é horizontal, sem fundo próprio e sem fixação.
+- A navbar mobile colapsa atrás de ícone de três linhas.
 - Existem botões flutuantes de WhatsApp e voltar ao topo.
 - Não há frases proibidas no código.
 - Não há uso de logo com fundo.

@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { AtSign, Clock, Mail, MapPin, MessageCircle } from 'lucide-svelte';
+	import { Clock, Mail, MapPin, MessageCircle } from 'lucide-svelte';
+	import InstagramIcon from '$lib/components/InstagramIcon.svelte';
 	import logoDark from '$lib/assets/brand/logos/logo_ferretti_02.svg';
 	import logoLight from '$lib/assets/brand/logos/logo_ferretti_03.svg';
 	import { contact, navItems } from '$lib/content/site';
@@ -25,9 +26,11 @@
 			<a href={contact.whatsappHref} target="_blank" rel="noreferrer">
 				<MessageCircle size={17} /> WhatsApp
 			</a>
-			<a href={contact.emailHref}><Mail size={17} /> {contact.email}</a>
+			{#each contact.emails as email (email.href)}
+				<a href={email.href}><Mail size={17} /> {email.label}</a>
+			{/each}
 			<a href={contact.instagramHref} target="_blank" rel="noreferrer">
-				<AtSign size={17} />
+				<InstagramIcon size={17} />
 				{contact.instagram}
 			</a>
 			<span><MapPin size={17} /> {contact.service}</span>
@@ -65,7 +68,7 @@
 	.brand-block img {
 		display: block;
 		margin-bottom: 1.2rem;
-		width: min(15rem, 100%);
+		width: min(12.5rem, 100%);
 	}
 
 	p,
@@ -95,9 +98,16 @@
 
 	.contact-block a,
 	.contact-block span {
-		align-items: flex-start;
-		display: inline-flex;
+		align-items: start;
+		display: grid;
 		gap: 0.65rem;
+		grid-template-columns: 1.1rem minmax(0, 1fr);
+	}
+
+	.contact-block :global(svg) {
+		display: block;
+		justify-self: center;
+		margin-top: 0.25em;
 	}
 
 	a:hover {

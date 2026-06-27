@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ArrowUp, MessageCircle } from 'lucide-svelte';
+	import InstagramIcon from '$lib/components/InstagramIcon.svelte';
 	import { contact } from '$lib/content/site';
 </script>
 
@@ -12,6 +13,15 @@
 		aria-label="Abrir WhatsApp"
 	>
 		<MessageCircle size={20} />
+	</a>
+	<a
+		class="float-button"
+		href={contact.instagramHref}
+		target="_blank"
+		rel="noreferrer"
+		aria-label="Abrir Instagram"
+	>
+		<InstagramIcon size={20} />
 	</a>
 	<a class="float-button" href="#top" aria-label="Voltar ao topo">
 		<ArrowUp size={20} />
