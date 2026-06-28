@@ -1,6 +1,12 @@
 import flavioPortrait from '$lib/assets/brand/partners/flavio-ferretti-2.jpeg';
 import nathaliaPortrait from '$lib/assets/brand/partners/nathalia-ferretti.jpeg';
 
+export const brand = {
+	name: 'Advocacia Ferretti',
+	siteUrl: 'https://advocaciaferretti.com.br',
+	domain: 'advocaciaferretti.com.br'
+} as const;
+
 export const navItems = [
 	{ href: '#escritorio', label: 'Escritório' },
 	{ href: '#atuacao', label: 'Atuação' },
@@ -13,17 +19,17 @@ export const contact = {
 	whatsappLabel: 'WhatsApp',
 	whatsappNumber: '(11) 99507-7294',
 	whatsappHref:
-		'https://wa.me/5511995077294?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Ferretti%20Advogados.',
-	email: 'flavio@ferrettiadvogados.com.br',
-	emailHref: 'mailto:flavio@ferrettiadvogados.com.br',
+		'https://wa.me/5511995077294?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Advocacia%20Ferretti.',
+	email: 'flavio@advocaciaferretti.com.br',
+	emailHref: 'mailto:flavio@advocaciaferretti.com.br',
 	emails: [
 		{
-			label: 'flavio@ferrettiadvogados.com.br',
-			href: 'mailto:flavio@ferrettiadvogados.com.br'
+			label: 'flavio@advocaciaferretti.com.br',
+			href: 'mailto:flavio@advocaciaferretti.com.br'
 		},
 		{
-			label: 'nathalia@ferrettiadvogados.com.br',
-			href: 'mailto:nathalia@ferrettiadvogados.com.br'
+			label: 'nathalia@advocaciaferretti.com.br',
+			href: 'mailto:nathalia@advocaciaferretti.com.br'
 		}
 	],
 	instagram: '@ferretti.advs',
@@ -33,12 +39,12 @@ export const contact = {
 } as const;
 
 export const home = {
-	title: 'Ferretti Advogados',
+	title: brand.name,
 	subtitle: 'Advocacia e consultoria jurídica',
 	description:
 		'Advocacia e consultoria jurídica com atuação especializada em Direito do Trabalho, com atendimento presencial em São Paulo e online para todo o Brasil.',
 	paragraphs: [
-		'O Ferretti Advogados presta assessoria jurídica a trabalhadores, profissionais e empresas, atuando tanto na esfera consultiva quanto contenciosa.',
+		'A Advocacia Ferretti presta assessoria jurídica a trabalhadores, profissionais e empresas, atuando tanto na esfera consultiva quanto contenciosa.',
 		'Com atendimento nacional e condução direta pelos sócios, o escritório desenvolve soluções jurídicas pautadas pela técnica, responsabilidade e atenção às particularidades de cada demanda.',
 		'Unimos experiência prática, atendimento próximo e atuação estratégica para proteger direitos, prevenir riscos e construir soluções jurídicas seguras para trabalhadores e empresas.'
 	],
@@ -51,7 +57,7 @@ export const office = {
 	paragraphs: [
 		'Nosso escritório foi constituído com o propósito de oferecer uma atuação jurídica técnica, transparente, responsável e próxima de quem busca nossos serviços. A condução dos trabalhos é realizada diretamente pelos sócios, com foco na análise individualizada de cada caso e na construção de soluções adequadas às suas particularidades.',
 		'Nosso trabalho é pautado pela excelência técnica, pela atenção aos detalhes, pela compreensão das necessidades de cada cliente e pelo comprometimento com a condução responsável de cada demanda.',
-		'Com essa visão, a Ferretti Advogados reúne experiência, atendimento humanizado e atuação diligente, sempre pautados pela ética, transparência e pelo compromisso com a melhor solução para cada caso.'
+		'Com essa visão, a Advocacia Ferretti reúne experiência, atendimento humanizado e atuação diligente, sempre pautados pela ética, transparência e pelo compromisso com a melhor solução para cada caso.'
 	]
 } as const;
 
@@ -138,9 +144,13 @@ export const partners = [
 ] as const;
 
 export const partnersIntro =
-	'O Ferretti Advogados nasceu da união de duas trajetórias construídas com dedicação à advocacia trabalhista, reunindo experiência prática, atendimento próximo e atuação técnica.';
+	'A Advocacia Ferretti nasceu da união de duas trajetórias construídas com dedicação à advocacia trabalhista, reunindo experiência prática, atendimento próximo e atuação técnica.';
 
 export const seo = {
+	title: `${brand.name} | Advocacia Trabalhista em São Paulo`,
 	description:
-		'Ferretti Advogados: advocacia e consultoria jurídica especializada em Direito do Trabalho, com atendimento presencial em São Paulo e online para todo o Brasil.'
+		'Advocacia Ferretti: advocacia trabalhista em São Paulo, com atendimento presencial e consultoria online para trabalhadores e empresas em todo o Brasil.',
+	image: '/og-image.png',
+	imageAlt: 'Advocacia Ferretti - advocacia trabalhista estratégica',
+	locale: 'pt_BR'
 } as const;

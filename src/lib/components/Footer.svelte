@@ -4,7 +4,7 @@
 	import WhatsAppIcon from '$lib/components/WhatsAppIcon.svelte';
 	import logoDark from '$lib/assets/brand/logos/logo_ferretti_02.svg';
 	import logoLight from '$lib/assets/brand/logos/logo_ferretti_03.svg';
-	import { contact, navItems } from '$lib/content/site';
+	import { brand, contact, navItems } from '$lib/content/site';
 
 	let { tone = 'dark' }: { tone?: 'light' | 'dark' } = $props();
 	const logo = $derived(tone === 'light' ? logoDark : logoLight);
@@ -13,7 +13,7 @@
 <footer class={`variant-footer ${tone}`}>
 	<div class="footer-inner">
 		<div class="brand-block">
-			<img src={logo} alt="Ferretti Advogados" />
+			<img src={logo} alt={brand.name} />
 			<p>Advocacia e consultoria jurídica especializada em Direito do Trabalho.</p>
 		</div>
 

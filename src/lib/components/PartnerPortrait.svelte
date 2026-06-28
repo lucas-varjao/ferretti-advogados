@@ -14,7 +14,7 @@
 
 <div class={`portrait ${variant}`} aria-label={`Retrato de ${name}`}>
 	{#if src}
-		<img {src} alt={`Retrato de ${name}`} />
+		<img {src} alt={`Retrato de ${name}`} loading="lazy" decoding="async" />
 	{:else}
 		<span>{initials}</span>
 	{/if}

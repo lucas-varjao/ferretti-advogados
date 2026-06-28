@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Menu, X } from 'lucide-svelte';
 	import WhatsAppIcon from '$lib/components/WhatsAppIcon.svelte';
-	import { contact, navItems } from '$lib/content/site';
+	import { brand, contact, navItems } from '$lib/content/site';
 
 	let {
 		logo,
@@ -19,8 +19,8 @@
 </script>
 
 <header class={`site-nav ${tone}`}>
-	<a class="brand-link" href="#top" aria-label="Ferretti Advogados" onclick={closeMenu}>
-		<img src={logo} alt="Ferretti Advogados" />
+	<a class="brand-link" href="#top" aria-label={brand.name} onclick={closeMenu}>
+		<img src={logo} alt={brand.name} />
 	</a>
 
 	<nav class="desktop-links" aria-label="Navegação principal">

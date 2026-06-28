@@ -24,7 +24,8 @@
 		office,
 		partners,
 		partnersIntro,
-		practiceAreas
+		practiceAreas,
+		seo
 	} from '$lib/content/site';
 
 	const areaIcons = [Users, BriefcaseBusiness];
@@ -32,7 +33,7 @@
 	const officeTopics = ['Atuação direta', 'Análise individualizada', 'Soluções responsáveis'];
 </script>
 
-<MetaTags title="Ferretti Advogados | Advocacia Trabalhista" />
+<MetaTags title={seo.title} />
 
 <main id="top" class="v1">
 	<section class="hero">

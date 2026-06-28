@@ -1,4 +1,4 @@
-# AGENTS.md - Ferretti Advogados
+# AGENTS.md - Advocacia Ferretti
 
 ## Projeto
 
@@ -6,7 +6,7 @@ Landing page em SvelteKit/Svelte 5, TypeScript e Tailwind, com deploy em Cloudfl
 
 O objetivo atual é manter a versão definitiva da landing page em `/`.
 
-A proposta escolhida foi a antiga `/1`, com direção editorial clara, navegação horizontal minimalista e foco em advocacia trabalhista estratégica para trabalhadores e empresas.
+A proposta escolhida tem direção editorial clara, navegação horizontal minimalista e foco em advocacia trabalhista estratégica para trabalhadores e empresas.
 
 ## Comandos
 
@@ -149,7 +149,6 @@ Mobile é essencial.
 Verificar:
 
 - `/` carrega a versão definitiva.
-- `/1` redireciona para `/`.
 - A navbar desktop é horizontal, sem fundo próprio e sem fixação.
 - A navbar mobile colapsa atrás de ícone de três linhas.
 - Existem botões flutuantes de WhatsApp e voltar ao topo.
