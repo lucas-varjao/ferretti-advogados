@@ -2,7 +2,7 @@ import flavioPortrait from '$lib/assets/brand/partners/flavio-ferretti-2.jpeg';
 import nathaliaPortrait from '$lib/assets/brand/partners/nathalia-ferretti-2.jpeg';
 
 export const brand = {
-	name: 'Advocacia Ferretti',
+	name: 'Ferretti Advogados',
 	siteUrl: 'https://advocaciaferretti.com.br',
 	domain: 'advocaciaferretti.com.br'
 } as const;
@@ -42,9 +42,9 @@ export const home = {
 	title: brand.name,
 	subtitle: 'Advocacia e consultoria jurídica',
 	description:
-		'Advocacia e consultoria jurídica com atuação especializada em Direito do Trabalho, com atendimento presencial em São Paulo e online para todo o Brasil.',
+		'Atuação especializada em Direito do Trabalho, com atendimento presencial em São Paulo e online para todo o Brasil.',
 	paragraphs: [
-		'A Advocacia Ferretti presta assessoria jurídica a trabalhadores, profissionais e empresas, atuando tanto na esfera consultiva quanto contenciosa.',
+		'A Ferretti Advogados presta assessoria jurídica a trabalhadores, profissionais e empresas, atuando tanto na esfera consultiva quanto contenciosa.',
 		'Com atendimento nacional e condução direta pelos sócios, o escritório desenvolve soluções jurídicas pautadas pela técnica, responsabilidade e atenção às particularidades de cada demanda.',
 		'Unimos experiência prática, atendimento próximo e atuação estratégica para proteger direitos, prevenir riscos e construir soluções jurídicas seguras para trabalhadores e empresas.'
 	],
@@ -57,7 +57,7 @@ export const office = {
 	paragraphs: [
 		'Nosso escritório foi constituído com o propósito de oferecer uma atuação jurídica técnica, transparente, responsável e próxima de quem busca nossos serviços. A condução dos trabalhos é realizada diretamente pelos sócios, com foco na análise individualizada de cada caso e na construção de soluções adequadas às suas particularidades.',
 		'Nosso trabalho é pautado pela excelência técnica, pela atenção aos detalhes, pela compreensão das necessidades de cada cliente e pelo comprometimento com a condução responsável de cada demanda.',
-		'Com essa visão, a Advocacia Ferretti reúne experiência, atendimento humanizado e atuação diligente, sempre pautados pela ética, transparência e pelo compromisso com a melhor solução para cada caso.'
+		'Com essa visão, a Ferretti Advogados reúne experiência, atendimento humanizado e atuação diligente, sempre pautados pela ética, transparência e pelo compromisso com a melhor solução para cada caso.'
 	]
 } as const;
 
@@ -121,6 +121,16 @@ export const differentiators = [
 
 export const partners = [
 	{
+		name: 'Flávio Ferretti',
+		initials: 'FF',
+		src: flavioPortrait,
+		role: 'Sócio | Advogado trabalhista',
+		oab: 'OAB/SP 238.245',
+		summary: 'Advogado com 17 anos de atuação profissional exclusivamente na área trabalhista.',
+		description:
+			'Ao longo de sua trajetória, participou da condução de milhares de audiências e negociações, desenvolvendo ampla experiência prática na resolução de conflitos e na representação de clientes em demandas judiciais.'
+	},
+	{
 		name: 'Nathália Ferretti',
 		initials: 'NF',
 		src: nathaliaPortrait,
@@ -130,27 +140,17 @@ export const partners = [
 			'Advogada trabalhista desde 2018, com atuação voltada à assessoria consultiva e contenciosa de trabalhadores e empresas.',
 		description:
 			'Especializada em Direito e Processo do Trabalho, atua na condução de demandas judiciais e na elaboração de estratégias jurídicas voltadas à prevenção e solução de conflitos, sempre com atenção às particularidades de cada caso.'
-	},
-	{
-		name: 'Flávio Ferretti',
-		initials: 'FF',
-		src: flavioPortrait,
-		role: 'Sócio | Advogado trabalhista',
-		oab: 'OAB/SP 238.245',
-		summary: 'Advogado com 17 anos de atuação profissional exclusivamente na área trabalhista.',
-		description:
-			'Ao longo de sua trajetória, participou da condução de milhares de audiências e negociações, desenvolvendo ampla experiência prática na resolução de conflitos e na representação de clientes em demandas judiciais.'
 	}
 ] as const;
 
 export const partnersIntro =
-	'A Advocacia Ferretti nasceu da união de duas trajetórias construídas com dedicação à advocacia trabalhista, reunindo experiência prática, atendimento próximo e atuação técnica.';
+	'A Ferretti Advogados nasceu da união de duas trajetórias construídas com dedicação à advocacia trabalhista, reunindo experiência prática, atendimento próximo e atuação técnica.';
 
 export const seo = {
 	title: `${brand.name} | Advocacia Trabalhista em São Paulo`,
 	description:
-		'Advocacia Ferretti: advocacia trabalhista em São Paulo, com atendimento presencial e consultoria online para trabalhadores e empresas em todo o Brasil.',
+		'Ferretti Advogados: advocacia trabalhista em São Paulo, com atendimento presencial e consultoria online para trabalhadores e empresas em todo o Brasil.',
 	image: '/og-image.png',
-	imageAlt: 'Advocacia Ferretti - advocacia trabalhista estratégica',
+	imageAlt: 'Ferretti Advogados - advocacia trabalhista estratégica',
 	locale: 'pt_BR'
 } as const;
