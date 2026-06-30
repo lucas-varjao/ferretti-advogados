@@ -20,16 +20,12 @@ export const contact = {
 	whatsappNumber: '(11) 99507-7294',
 	whatsappHref:
 		'https://wa.me/5511995077294?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Advocacia%20Ferretti.',
-	email: 'flavio@advocaciaferretti.com.br',
-	emailHref: 'mailto:flavio@advocaciaferretti.com.br',
+	email: 'contato.ferrettiadvogados@gmail.com',
+	emailHref: 'mailto:contato.ferrettiadvogados@gmail.com',
 	emails: [
 		{
-			label: 'flavio@advocaciaferretti.com.br',
-			href: 'mailto:flavio@advocaciaferretti.com.br'
-		},
-		{
-			label: 'nathalia@advocaciaferretti.com.br',
-			href: 'mailto:nathalia@advocaciaferretti.com.br'
+			label: 'contato.ferrettiadvogados@gmail.com',
+			href: 'mailto:contato.ferrettiadvogados@gmail.com'
 		}
 	],
 	instagram: '@ferretti.advs',
