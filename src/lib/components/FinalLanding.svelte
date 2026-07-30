@@ -147,6 +147,7 @@
 							initials={partner.initials}
 							src={partner.src}
 							variant="editorial"
+							objectPosition={'objectPosition' in partner ? partner.objectPosition : undefined}
 						/>
 						<div class="partner-copy">
 							<div class="partner-identity">
@@ -530,7 +531,7 @@
 	}
 
 	:global(.v1 .partner-card .portrait) {
-		aspect-ratio: 4 / 3.45;
+		aspect-ratio: 1 / 1;
 		justify-self: center;
 		max-width: 30rem;
 		width: 92%;

@@ -130,6 +130,7 @@ export const partners = [
 		name: 'Nathália Ferretti',
 		initials: 'NF',
 		src: nathaliaPortrait,
+		objectPosition: 'center top',
 		role: 'Sócia | Advogada trabalhista',
 		oab: 'OAB/SP 380.195',
 		summary:

@@ -3,18 +3,26 @@
 		name,
 		initials,
 		src = '',
-		variant = 'framed'
+		variant = 'framed',
+		objectPosition = 'center'
 	}: {
 		name: string;
 		initials: string;
 		src?: string;
 		variant?: 'framed' | 'editorial';
+		objectPosition?: string;
 	} = $props();
 </script>
 
 <div class={`portrait ${variant}`} aria-label={`Retrato de ${name}`}>
 	{#if src}
-		<img {src} alt={`Retrato de ${name}`} loading="lazy" decoding="async" />
+		<img
+			{src}
+			alt={`Retrato de ${name}`}
+			loading="lazy"
+			decoding="async"
+			style:object-position={objectPosition}
+		/>
 	{:else}
 		<span>{initials}</span>
 	{/if}
