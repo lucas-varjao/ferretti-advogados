@@ -1,5 +1,5 @@
-import flavioPortrait from '$lib/assets/brand/partners/flavio-ferretti-2.jpeg';
-import nathaliaPortrait from '$lib/assets/brand/partners/nathalia-ferretti-2.jpeg';
+import flavioPortrait from '$lib/assets/brand/partners/flavio-ferretti-3.png';
+import nathaliaPortrait from '$lib/assets/brand/partners/nathalia-ferretti-3.jpeg';
 
 export const brand = {
 	name: 'Ferretti Advogados',
