@@ -19,7 +19,7 @@ export const contact = {
 	whatsappLabel: 'WhatsApp',
 	whatsappNumber: '(11) 99507-7294',
 	whatsappHref:
-		'https://wa.me/5511995077294?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Advocacia%20Ferretti.',
+		'https://wa.me/5511995077294?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Ferretti%20Advogados.',
 	email: 'contato.ferrettiadvogados@gmail.com',
 	emailHref: 'mailto:contato.ferrettiadvogados@gmail.com',
 	emails: [

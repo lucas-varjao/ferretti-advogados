@@ -1,4 +1,4 @@
-# AGENTS.md - Advocacia Ferretti
+# AGENTS.md - Ferretti Advogados
 
 ## Projeto
 
